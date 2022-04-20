@@ -15,7 +15,7 @@ pipeline {
 		stage('18059938 Stage Three') {
 		steps {
 			sh '''#!/bin/bash
-                 targets=puppetclient1;
+                 targets=websvr_18059938;
                  locate_script='/18059938/operate_repo/18059938_script';
                  docker cp $locate_script $targets://$locate_script;
                  bolt script run $locate_script -t $targets -u dockeradm -p 18059938 --no-host-key-check --run-as root;
