@@ -7,5 +7,5 @@ puppet resource file /18059938/clone ensure=absent force=true
 puppet resource file /18059938 ensure=directory
 puppet resource file /18059938/clone ensure=directory
 cd /18059938/clone
-git clone https://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@github.com/SF-218/operate_repo.git
+git clone https://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@github.com/SF-218/operate_repo.git
 cp -p /18059938/operate_repo/index.html /var/www/html
